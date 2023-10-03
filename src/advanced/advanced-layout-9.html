@@ -6,7 +6,57 @@
     <title>Advanced Layout 9</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body{
+     display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr  ;
+  grid-gap: 1.5rem;
+  overflow: hidden;
+  padding :1em;
+  grid-template-areas: 
+  
+  ". main main main main"
+          "header header . . ."
+          "nav nav . . ."
+          "footer footer . . .";
+      }
+
+      header {
+        grid-area: header;
+        align-self: start;
+        height: 6rem;
+        translate: 0em -5rem;
+
+      }
+
+
+
+      nav {
+        grid-area: nav;
+        align-self: start;
+        height: 6rem;
+        translate: 0em -5rem;
+
+
+      }
+
+      footer {
+        grid-area: footer;
+        align-self: start;
+        height: 6rem;
+        translate: 0em -5rem;
+
+      }
+
+      main {
+        grid-area: main;
+        position: relative;
+        z-index: -1;
+        height: 420%;
+      }
+ 
+   
+
     </style>
   </head>
   <body id="advanced-layout-9">
